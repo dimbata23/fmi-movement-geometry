@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" type="text/css" href="mecho.css">
+        <script src="mecho.min.js"></script>
+        <script src="mecho.ellipsoid.js"></script>
+        <script src="controls.js"></script>
+        <script src="materials.js"></script>
+        <script src="mario.js"></script>
+        <script src="main.js"></script>
+
+    </head>
+
+    <body onload="main()">
+        <div id="info">
+            Use WASD & Space to move.
+        </div>
+        <div id="kofa">
+            <div class="slider">
+                <p class="name">Player Speed</p>
+                <input type="range" min="1" max="20" value="8" class="slider" oninput="changePlayerSpeed(this);">
+                <p class="value" id="playerSpeedVal">8</p>
+            </div>
+            <div class="slider">
+                <p class="name">Camera Speed</p>
+                <input type="range" min="5" max="30" value="15" class="slider" oninput="changeCameraSpeed(this);">
+                <p class="value" id="cameraSpeedVal">15</p>
+            </div>
+            <div class="slider">
+                <p class="name">Camera Distance</p>
+                <input type="range" min="5" max="100" value="25" class="slider" oninput="changeCameraDistance(this);">
+                <p class="value" id="cameraDistanceVal">25</p>
+            </div>
+        </div>
+    </body>
+
+</html>
